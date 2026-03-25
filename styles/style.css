@@ -8,7 +8,19 @@ html {
   block-size: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 6px; /* Ширина вертикальной полосы */
+    height: 6px; /* Высота горизонтальной полосы */
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2); /* Цвет ползунка */
+    border-radius: 3px; /* Закругление */
+}
+
+
 .page {
+  display: grid;
+  place-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,4 +47,31 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  max-width: 1140px;
+  width: 100%;
+  gap: 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+.content__list-container {
+  height: 300px;
+  overflow: hidden auto;
 }

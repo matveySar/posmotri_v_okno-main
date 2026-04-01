@@ -77,12 +77,14 @@ ol {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .search-form__label {
   display: flex;
   gap: 5px;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
@@ -171,6 +173,7 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .button:hover {
